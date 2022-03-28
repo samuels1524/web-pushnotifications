@@ -1,0 +1,23 @@
+<div class="center">
+  <img src="assets/firebase-logo.png">
+  <h2>PRUEBA MENSAJES RECIVIDOS</h2>
+  <h4>Mensaje recibido:</h4>
+
+  <form [formGroup]="clientForm" (ngSubmit)="sendNotification(clientForm.value)">
+
+    <label>Destinatario:</label><br>
+    <input type="text" formControlName="dest"><br>
+
+    <label>Titulo:</label><br>
+    <input type="text" formControlName="title"><br>
+
+    <label>Mensaje:</label><br>
+    <input type="text" formControlName="body"><br><br>
+
+    <button type="submit">
+      Enviar notificacion
+    </button>
+  </form>
+
+  <p class="nes-text is-error">{{mesaggeReceived | json}}</p>
+</div>

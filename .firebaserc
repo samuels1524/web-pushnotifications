@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "notif-b16b2": {
+      "hosting": {
+        "notif": [
+          "notif-b16b2"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "notif-b16b2"
+  }
+}
