@@ -11,8 +11,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class AppComponent {
   mesaggeReceived = '';
-  token =
-    'dSL5ajY3rUQy2-BYyeFPNg:APA91bFGiOj-KbRz4ZX8Df1AHtMTPcEf3MpYJaY9BfmXO5dR-j7So_7gqV31Gl6siQkeGF48fKhT2c1Ox6cf17f2UC_-SDEsk3iQTceijniKb-szThVVF-_HsmLxOtKE3DB7OOCK0zbD';
+  token = '';
   clientForm: FormGroup;
   constructor(
     private notificacion: MessagingService,
@@ -44,8 +43,7 @@ export class AppComponent {
   sendNotification(form: any) {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
-      Authorization:
-        'key=AAAAapEvZgI:APA91bGNSfzitVWZ1WCKD--hCY8YIBJ49xUayy8-l67MqoKuRK7aLtTc98IsLN2IYO0nYyCGpjR7TfLC-YxUOXDEbAnznBrsdlZ5CQAwYh8Td6xlRM7VJA3W7VDRmjhxVenTFh4mXyFi',
+      Authorization: 'key=<SERVER KEY>',
     });
     const options = JSON.stringify({
       to: form.dest,

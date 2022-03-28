@@ -20,8 +20,7 @@ export class MessagingService {
       const permsis = await Notification.requestPermission();
       if (permsis === 'granted') {
         const tokenFirebase = await getToken(this.messagingFirebase, {
-          vapidKey:
-            'BFvphIsmvKdeiDm1Shz8JPMhHbzuAljKQVMwNWfEi2VAkE1boVxRPwABEuom6FnuTWizeo-JLFLODCS1vY_D-AY',
+          vapidKey: '',
         });
         resolve(tokenFirebase);
       } else {
